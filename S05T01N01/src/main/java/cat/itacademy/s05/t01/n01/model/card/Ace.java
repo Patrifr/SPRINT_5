@@ -8,8 +8,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Ace implements Card {
-    private String rank;
-    private Suit suit;
-    private int value;
+public class Ace extends Card {
+
+    public Ace (Suit suit){
+        super("Ace", suit);
+    }
 }

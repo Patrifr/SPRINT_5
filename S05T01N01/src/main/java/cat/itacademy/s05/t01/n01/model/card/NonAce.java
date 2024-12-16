@@ -8,12 +8,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class NonAce implements Card {
-    private String rank;
-    private Suit suit;
+public class NonAce extends Card {
     private int value;
 
-    public NonAce(int value){
+    public NonAce(String rank, Suit suit, int value){
+        super(rank, suit);
         this.value = value;
     }
 }

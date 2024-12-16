@@ -9,9 +9,9 @@ import org.springframework.data.relational.core.mapping.Table;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "Ranking")
-public class Ranking {
-    @Id private int id;
+@Table(name = "ranking")
+public class PlayerRanking {
+    @Id private String id;
     @Column private String playerName;
-    @Column private int score;
+    @Column private int wins;
 }
